@@ -171,7 +171,7 @@ class AutoDelete(commands.Cog):
         ctx: commands.GuildContext,
         add_or_remove: Literal["add", "remove"],
         channel: discord.TextChannel,
-        days: Optional[commands.Range[int, 1, 13]] = None,
+        days: Optional[commands.Range[int, 0, 13]] = None,
     ):
         """
         Add or remove auto delete rules for channels.
